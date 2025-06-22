@@ -7,10 +7,10 @@
 // module.exports={
 //     connectToMongoDB,
 // }
-dotenv.config();
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+const dotenv = require('dotenv');  
+dotenv.config();                   
 
+const mongoose = require('mongoose');
 
 async function connectToMongoDB() {
   const url = process.env.MONGO_URI;
@@ -26,3 +26,4 @@ async function connectToMongoDB() {
 module.exports = {
   connectToMongoDB,
 };
+
